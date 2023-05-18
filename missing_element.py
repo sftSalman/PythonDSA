@@ -1,13 +1,13 @@
-def findMissing(arr, N):
-    # create a list of zeroes
-    temp = [0] * (N + 1)
+arr = [1, 2, 4, 5, 6]
 
-    for i in range(0, N):
-        temp[arr[i] - 1] = 1
+def missing(arr):
+    arr_sum = 0
+    n = len(arr) + 1
+    total = (n * (n + 1)) // 2
 
-    for i in range(0, N + 1):
-        if (temp[i] == 0):
-            ans = i + 1
+    for num in arr:
+        arr_sum += num
 
-    print(ans)
-findMissing([1,2,4,6,3,7,8],len([1,2,4,6,3,7,8]))
+    return total - arr_sum
+
+print(missing(arr))
