@@ -1,10 +1,6 @@
-arr = [10, 5, 3, 4, 3, 5, 6]
-for i in range(len(arr)):
-    print('arr[i]',arr[i])
-
-
-for i in range(len(arr)):
-    print('len ',arr[i])
-
-for i in (arr):
-    print('i ' ,arr[i])
+arr = [1,2,3,0,2,3,0,2]
+new_arr = [22]
+zerr_arr = [1]*3
+print(zerr_arr)
+arr.extend(new_arr)
+print(arr)
