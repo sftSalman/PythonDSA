@@ -6,8 +6,11 @@ def even_odd(arr):
     for index, num in enumerate(arr):
         if index % 2 == 0:
             even.append(num)
+            even.sort()
         else:
             odd.append(num)
-    return (even + odd)
+            odd.sort()
+    return even + odd
 
-print(even_odd(arr))
+result = even_odd(arr)
+print(*result)
