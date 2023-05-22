@@ -1,10 +1,10 @@
 arr = [10, 5, 3, 4, 3, 5, 6]
-# for num in range(1,7):
-#    print(num)
+for i in range(len(arr)):
+    print('arr[i]',arr[i])
 
-print(arr.index(5))
-print(arr[2])
-print(arr[2+1])
-print(min(arr))
 
-d = {10, 5, 3, 4, 3, 5, 6}
+for i in range(len(arr)):
+    print('len ',arr[i])
+
+for i in (arr):
+    print('i ' ,arr[i])
