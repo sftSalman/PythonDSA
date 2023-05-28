@@ -1,0 +1,15 @@
+## //Input two string. Find if the first string is in second string. output validif found or output invalid if not find.//Input: XYZ//Output: ABCXYZ
+
+## //Find minimum array element using recursion//Input : A = {1, 4, 3, -5, -4, 8, 6};//Output : -5
+
+## Stack
+## /*Dhoro kono browser e kichu webpage browse krla, segula hobe input, jdi back button e click koro then ager page ta back krbeTake a stringInput:google.comfacebook.combacktwitter.comOutput:google.comfacebook.comgoogle.comtwitter.comNote: Dont use Array/list
+
+## 
+## //Input two string. Find if the first string is in second string. output validif found or output invalid if not find.//Input: XYZ//Output: ABCXYZ
+
+### array 
+## //input: A = [7, 1, 2, 3, 4, 5, 6]//output: 20//Find the maximum sum of the contiguous array//7+1+2+3+4=17//1+2+3+4+5=15//2+3+4+5+6=20//Maximum value is 20
+
+## linkedlist
+## //Input: 1->2->3//Output: 3->2->1//Swap only the first & last element
