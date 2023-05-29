@@ -1,0 +1,31 @@
+## Problem 1
+- **Description:** Find if the first string is in the second string.
+- **Input:** XYZ
+- **Output:** ABCXYZ
+
+## Problem 2
+- **Description:** Find the minimum element in an array using recursion.
+- **Input:** A = {1, 4, 3, -5, -4, 8, 6}
+- **Output:** -5
+
+## Problem 3
+- **Description:** Browse webpages and go back using the back button.
+- **Input:** google.com, facebook.com, back, twitter.com
+- **Output:** google.com, facebook.com, google.com, twitter.com
+- **Note:** Don't use Array/list
+
+## Problem 4
+- **Description:** Find if the first string is in the second string.
+- **Input:** XYZ
+- **Output:** ABCXYZ
+
+## Problem 5
+- **Description:** Find the maximum sum of a contiguous subarray.
+- **Input:** A = [7, 1, 2, 3, 4, 5, 6]
+- **Output:** 20
+- **Explanation:** Various contiguous subarrays: 7+1+2+3+4=17, 1+2+3+4+5=15, 2+3+4+5+6=20. The maximum value is 20.
+
+## Problem 6
+- **Description:** Swap the first and last element in a linked list.
+- **Input:** 1->2->3
+- **Output:** 3->2->1
