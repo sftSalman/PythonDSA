@@ -11,8 +11,8 @@ node1.next = node2
 node2.next = node3
 
 currentNode = node1
-while True:
-    print(currentNode.value, '->')
+while currentNode is not None:
+    print (currentNode.value, '->',end = ' '),
     if currentNode.next is None:
         print('None')
         break
