@@ -1,5 +1,5 @@
 class LinkedListNode:
-    def __init__(self, value, next_Node=None):
+    def __init__(self, head, tail=None):
         self.value = value
         self.next = next_Node
 
