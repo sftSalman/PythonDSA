@@ -1,12 +1,13 @@
-def printLeaders(arr, size) :
-    for i in range ( 0, size ) :
-        for j in range ( i + 1, size ) :
-            if arr[i] <= arr[j] :
+def printLeaders(arr, size):
+    for i in range(0, size):
+        j = i + 1
+        while j < size:
+            if arr[i] <= arr[j]:
                 break
-        if j == size :  # If loop didn't break
-            print ( arr[i] )
+            j += 1
+        if j == size:  # If loop completed all iterations
+            print(arr[i])
 
-
-# Driver function
+# Driver code
 arr = [16, 17, 4, 3, 5, 2]
-printLeaders ( arr, len ( arr ) )
+printLeaders(arr, len(arr))
