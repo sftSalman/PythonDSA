@@ -29,6 +29,6 @@ def number_to_words(number) :
 
 
 # Example usage
-print ( number_to_words ( 123 ) )  # Output: "one hundred twenty-three"
+print ( number_to_words ( 7 ) )  # Output: "one hundred twenty-three"
 print ( number_to_words ( 9999 ) )  # Output: "nine thousand nine hundred ninety-nine"
 print ( number_to_words ( 212345 ) )  # Output: "two hundred twelve thousand three hundred forty-five"
