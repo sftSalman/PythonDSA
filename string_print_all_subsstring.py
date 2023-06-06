@@ -11,5 +11,5 @@ def printAllSubstrings(s, n) :
 
 # Driver program to test above function
 
-s = "abcd"
+s = "abc"
 printAllSubstrings ( s, len ( s ) )
