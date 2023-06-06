@@ -9,15 +9,8 @@ class LinkedList:
 
     def insert(self, value):
         node = linkedListNode(value)
-        if self.head is None:
-            self.head = node
-            return
-        currentNode = self.head
-        while True:
-            if currentNode.nextNode is None:
-                currentNode.nextNode = node
-                break
-            currentNode = currentNode.nextNode
+        node.nextNode = self.head
+        self.head = node
 
     def printList(self):
         currentNode = self.head
@@ -29,10 +22,12 @@ class LinkedList:
 # Create a linked list object
 l1 = LinkedList()
 
-# Insert a value and print the list
+# Insert values at the beginning and print the list
 l1.insert(6)
 l1.printList()
 
-# Insert another value and print the list
 l1.insert(7)
+l1.printList()
+
+l1.insert(8)
 l1.printList()
