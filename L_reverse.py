@@ -35,15 +35,15 @@ class LinkedList:
             currentNode = currentNode.nextNode
         return count
 
-    def reverse(self):
-        prevNode = None
-        currentNode = self.head
-        while currentNode is not None:
+    def reverse_recursive(self):
+        def reverse_util(currentNode, prevNode):
+            if currentNode is None:
+                return prevNode
             nextNode = currentNode.nextNode
             currentNode.nextNode = prevNode
-            prevNode = currentNode
-            currentNode = nextNode
-        self.head = prevNode
+            return reverse_util(nextNode, currentNode)
+
+        self.head = reverse_util(currentNode=self.head, prevNode=None)
 
 # Create a linked list object
 l1 = LinkedList()
@@ -57,8 +57,8 @@ l1.insert(8)
 print("Original list:")
 l1.printList()
 
-# Reverse the list
-l1.reverse()
+# Reverse the list recursively
+l1.reverse_recursive()
 
 # Print the reversed list
 print("Reversed list:")
