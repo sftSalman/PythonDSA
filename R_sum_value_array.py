@@ -1,11 +1,14 @@
 arr = [2,3,4,5,6,7]
 
-# using for loop
+# using for recursion
+
 
 def findsum(arr):
-    sum = 0
-    for i in arr :
-        sum = sum + i
-    return sum
+    if len(arr) == 1:
+        return arr[0]
+    else:
+        return arr[0]+findsum(arr[1:])
+
 
 print(findsum(arr))
+
