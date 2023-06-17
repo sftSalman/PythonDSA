@@ -1,15 +1,9 @@
+def find_minimum(arr):
+    if len(arr) == 1:
+        return arr[0]
+    else:
+        return min(arr[0], find_minimum(arr[1:]))
+
 arr = [1, 4, 3, -5, -4, 8, 6]
-
-
-def minArr(arr) :
-    min_element = float ( 'inf' )  # Initialize min_element with positive infinity
-
-    for element in arr :
-        if element < min_element :
-            min_element = element
-
-    return min_element
-
-
-min_element = minArr ( arr )
-print ( min_element )
+min_element = find_minimum(arr)
+print(min_element)
