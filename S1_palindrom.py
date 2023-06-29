@@ -1,7 +1,7 @@
 s = "abbb"
 print(s[::-1])
 
-def pallindrom(str):
+def pallindrom(s):
     # just reverse the sring
 
     rs = s[::-1]
