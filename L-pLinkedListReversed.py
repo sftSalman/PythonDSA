@@ -37,11 +37,11 @@ class LinkedList:
         self.head = prev
 
 
-    def reverse(self):
-        def rev_until(currentNode, prevNode):
-            if currentNode is None:
-                return prevNode
-            self.head = reverse()
+    # def reverse(self):
+    #     def rev_until(currentNode, prevNode):
+    #         if currentNode is None:
+    #             return prevNode
+    #         self.head = reverse()
 
 
 # Create a linked list object
