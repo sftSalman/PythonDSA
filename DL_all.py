@@ -84,6 +84,22 @@ class DoublyLinkedList:
         if tmp:
             self.head = tmp.prev
 
+    def pairs_with_sum(self,sum_val):
+        pairs = list()
+        p = self.head
+        q = None
+        while p:
+            q = p.next
+            while q:
+                if p.data + q.data == sum_val:
+                    pairs.append(p.data, q.data)
+                q = q.next
+            p = p.next
+
+        return pairs
+
+
+
 
 
 
@@ -105,3 +121,4 @@ dllist.add_before_node(1,12)
 dllist.print_list()
 dllist.reverse()
 dllist.print_list()
+print(dllist.pairs_with_sum(12))
