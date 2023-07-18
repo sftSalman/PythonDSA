@@ -11,12 +11,12 @@ class BT(object):
     def print_tree(self, traversal_type):
         if traversal_type == "preorder":
             return self.preorder_print(tree.root, "")
-        # elif traversal_type == "inorder":
-        #     return self.inorder_print(tree.root, "")
-        # elif traversal_type == "postorder":
-        #     return self.postorder_print(tree.root, "")
-        # elif traversal_type == "levelorder":
-        #     return self.levelorder_print(tree.root)
+        elif traversal_type == "inorder":
+            return self.inorder_print(tree.root, "")
+        elif traversal_type == "postorder":
+            return self.postorder_print(tree.root, "")
+        elif traversal_type == "levelorder":
+            return self.levelorder_print(tree.root)
 
         else:
             print("Traversal type " + str(traversal_type) + " is not supported.")
@@ -55,6 +55,8 @@ tree.root.right = Node(3)
 tree.root.left.left = Node(4)
 tree.root.left.right = Node(5)
 print(tree.print_tree('preorder'))
+print(tree.print_tree('postorder'))
+print(tree.print_tree('inorder'))
 
 
 
