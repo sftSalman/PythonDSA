@@ -9,6 +9,6 @@ def generate_subarrays(arr):
 
     return subarrays
 
-arr = [1, 2, 3]
+arr = 'salman'
 all_subarrays = generate_subarrays(arr)
 print(*all_subarrays)
