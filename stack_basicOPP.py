@@ -6,7 +6,10 @@ class Stack:
         return len(self.stack) == 0
 
     def push(self, item):
-        self.stack.append(item)
+        if item%2==0:
+             self.stack.append(item)
+        else:
+            print(f"{item} is not even")
 
     def pop(self):
         if self.is_empty():
@@ -35,7 +38,7 @@ print('is empty ?',my_stack.is_empty())  # Output: True
 # Add elements to the stack
 my_stack.push(10)
 my_stack.push(20)
-my_stack.push(30)
+my_stack.push(31)
 print(my_stack.printVal())
 # Check the size of the stack
 print('size',my_stack.size())  # Output: 3
