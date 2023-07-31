@@ -1,7 +1,6 @@
-st = 'aabccccddaa'
-for ch in st:
-    if ch == 'a' :
-        print(ch)
-      #  continue
-        print('u',ch)
+numbers = [1, 2, 3, 4, 5, 6]
 
+for num in numbers:
+    if num % 2 == 0:
+        continue  # Skip even numbers and go to the next iteration
+    print(num)
