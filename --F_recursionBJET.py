@@ -9,5 +9,5 @@ def recStringProcess(s) :
         return '*'+s[0].upper() + recStringProcess ( s[1 :] )
 
 
-str_input = 'A1b2C3DEFGH'
+str_input = '1A2bcDnajMkW'
 print ( recStringProcess ( str_input ) )  # Output: "BCDFGH"
