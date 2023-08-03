@@ -9,7 +9,7 @@ def leaderOfArray(arr):
             if arr[i] <= arr[j]:
                 is_leader = False
                 break
-        if is_leader:
+        if is_leader==True:
             leader.append(arr[i])
     return leader
 

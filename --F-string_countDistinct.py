@@ -1,14 +1,11 @@
+def printDistinct(s):
+    distinct_chars = []
 
-
-def countDistinct(s):
-    char_count = {}
-    count = 0
     for char in s:
-        if char not in char_count:
-            char_count[char] = 1
-            count += 1
+        if char not in distinct_chars:
+            distinct_chars.append(char)
 
-    return count
+    return distinct_chars
 
-str_example = 'salman'
-print(countDistinct(str_example))  # Output: 5 (distinct characters: 's', 'a', 'l', 'm', 'n')
+str_example = [1,2,3,4,5,6,6,3,5,3,2]
+print(printDistinct(str_example))  # Output: ['s', 'a', 'l', 'm', 'n'] (distinct characters)
