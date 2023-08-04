@@ -4,7 +4,7 @@ def dijkstra(graph, start, target):
     distances[start] = 0
 
     # Keep track of visited nodes
-    visited = set()
+    visited = set()  # new add
 
     # Keep track of previous nodes in the shortest path
     previous = {node: None for node in graph}
