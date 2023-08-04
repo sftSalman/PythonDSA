@@ -1,5 +1,5 @@
 def dijkstra(graph, start, target):
-    # Initialize distances to all nodes as infinity except the start node
+    # Init bhhialize distances to all nodes as infinity except the start node
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
 
